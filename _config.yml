@@ -8,11 +8,6 @@ avatarTitle: guanjianhe
 avatarDesc: 嵌入式
 url: "http://guanjianhe.github.io"
 
-# Comment
-comment:
-    disqus: leopard
-    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
-    # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
@@ -28,7 +23,7 @@ social:
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: xxxx  
+    id: 5973d1637265cee11db2a618a96d1cb2  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
@@ -41,7 +36,7 @@ ga:
 #
 #
 #  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+#  帮忙star一下，感谢~😆 地址： http://guanjianhe.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
