@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "C语言文件读写" 
+description: "C语言文件读写函数总结"
 tag: C 
 ---
 
@@ -233,3 +234,6 @@ tag: C
   `scanf()` 函数用于从标准输入（键盘）读取并格式化， `printf()` 函数发送格式化输出到标准输出（屏幕）。
 
   `stdout`和`stderr`的区别：`stdout`是行缓冲的，它的输出会放在一个buffer里面，只有到换行的时候，才会输出到屏幕。而`stderr`是无缓冲的，会直接输出
+
+<br>
+转载请注明：[guanjianhe的博客](https://guanjianhe.github.io/) » [C语言文件读写](https://guanjianhe.github.io/2020/02/FileReadWrite/)
