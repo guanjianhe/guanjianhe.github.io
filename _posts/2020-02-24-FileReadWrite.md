@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "C语言文件读写" 
+description: "C语言文件读写函数总结"
 tag: C 
 ---
 
