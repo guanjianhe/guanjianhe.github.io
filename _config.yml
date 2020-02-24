@@ -8,6 +8,12 @@ avatarTitle: guanjianhe
 avatarDesc: 嵌入式
 url: "http://guanjianhe.github.io"
 
+# Comment
+comment:
+    disqus: leopard
+    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    # uyan: 2143225  # 有言id,登录有言官网申请
+
 
 # Social
 social:
@@ -25,11 +31,6 @@ social:
 baidu:
     id: 5973d1637265cee11db2a618a96d1cb2  
 
-# Google Analytics
-# 使用博客模板请去掉或者更换 id
-ga:
-    id: xxxx  
-    host: auto  
 
 
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》
