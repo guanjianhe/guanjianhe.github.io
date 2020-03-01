@@ -9,7 +9,7 @@ tag: C
 
 # C语言文件读写
 
-### 打开文件
+## 打开文件
 
 `FILE *fopen(const char *filename, const char *mode)`
 
@@ -28,21 +28,19 @@ tag: C
 
   该函数返回一个 FILE 指针。否则返回 NULL
 
-### 关闭文件
+## 关闭文件
 
 `int fclose(FILE *stream)`
 
 - 参数
 
-	**stream** -- 这是指向 FILE 对象的指针，该 FILE 对象指定了要被关闭的流。
+  **stream** -- 这是指向 FILE 对象的指针，该 FILE 对象指定了要被关闭的流。
 
 - 返回值
 
   如果流成功关闭，则该方法返回零。如果失败，则返回 `EOF`。
 
-
-
-### 读文件
+## 读文件
 
 `int fscanf(FILE *stream, const char *format, ...)`
 
@@ -50,23 +48,17 @@ tag: C
 
   如果成功，该函数返回成功匹配和赋值的个数。如果到达文件末尾或发生读错误，则返回 `EOF`。
 
-
-
 `int fgetc(FILE *stream)`
 
- - 返回值
+- 返回值
 
    该函数以无符号 char 强制转换为 int 的形式返回读取的字符，如果到达文件末尾或发生读错误，则返回 `EOF`。
-
-
 
 `char *fgets(char *str, int n, FILE *stream)`
 
 - 返回值
 
   如果成功，该函数返回相同的 str 参数。如果到达文件末尾或者没有读取到任何字符，str 的内容保持不变，并返回一个空指针。如果发生错误，返回一个空指针。
-
-  
 
 `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream)`
 
@@ -78,9 +70,7 @@ tag: C
 - 返回值
   成功读取的元素总数会以 size_t 对象返回，size_t 对象是一个整型数据类型。如果总数与 nmemb 参数不同，则可能发生了一个错误或者到达了文件末尾。
 
-
-
-### 写文件
+## 写文件
 
 `int fprintf(FILE *stream, const char *format, ...)`
 
@@ -100,8 +90,6 @@ tag: C
 
   该函数返回一个非负值，如果发生错误则返回 `EOF`。
 
-
-
 `size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)`
 
 - 参数
@@ -115,9 +103,7 @@ tag: C
 
   如果成功，该函数返回一个 size_t 对象，表示元素的总数，该对象是一个整型数据类型。如果该数字与 nmemb 参数不同，则会显示一个错误。
 
-
-
-### 读写位置相关
+## 读写位置相关
 
 `int fseek(FILE *stream, long int offset, int whence)`
 
@@ -137,17 +123,13 @@ tag: C
 
   如果成功，则该函数返回零，否则返回非零值。
 
-
-
 `void rewind(FILE *stream)`
 
 - 功能描述：
 
   设置文件位置为给定流 **stream** 的文件的开头。
 
-
-
-### 删除文件
+## 删除文件
 
 `int remove(const char *filename)`
 
@@ -155,7 +137,7 @@ tag: C
 
   如果成功，则返回零。如果错误，则返回 -1
 
-### 修改文件名
+## 修改文件名
 
 `int rename(const char *old_filename, const char *new_filename)`
 
@@ -168,7 +150,7 @@ tag: C
 
   如果成功，则返回零。如果错误，则返回 -1
 
-### 判断文件是否结束
+## 判断文件是否结束
 
 `int feof(FILE *stream)`
 
@@ -176,9 +158,7 @@ tag: C
 
   当设置了与流关联的文件结束标识符时，该函数返回一个非零值，否则返回零。
 
-
-
-### 重定向流
+## 重定向流
 
 `FILE *freopen(const char *filename, const char *mode, FILE *stream)`
 
@@ -212,7 +192,7 @@ tag: C
      printf("该文本重定向到 file.txt\n");
   
      fclose(fp);
-     
+
      return(0);
   }
   ```
@@ -235,5 +215,6 @@ tag: C
 
   `stdout`和`stderr`的区别：`stdout`是行缓冲的，它的输出会放在一个buffer里面，只有到换行的时候，才会输出到屏幕。而`stderr`是无缓冲的，会直接输出
 
-<br>
+---
+
 转载请注明：[guanjianhe的博客](https://guanjianhe.github.io/) » [C语言文件读写](https://guanjianhe.github.io/2020/02/FileReadWrite/)
